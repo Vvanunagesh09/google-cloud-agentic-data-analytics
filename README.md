@@ -26,6 +26,11 @@ The BigQuery dataset `froyo_data` contains 11 tables: `allergen`, `consistsof`, 
 The sales and customer CSV files come from the codelab author's repository and are not redistributed here.
 
 ## What I Built
+## Architecture
+
+![Architecture diagram](screenshots/04-architecture.png)
+
+Users ask questions in plain English, either from the Antigravity IDE (Data Agent Kit + `GEMINI.md`) or from the BigQuery Data Agent in the Cloud Console. Gemini interprets the question and generates SQL, which runs against the `froyo_data` dataset in BigQuery. Forecasting (BigQuery ML) and Data Studio dashboards are planned next steps.
 
 ### 1. IDE-first analytics (Antigravity + Data Agent Kit)
 
